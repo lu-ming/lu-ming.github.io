@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Landau levels and its degeneracy  in different gauges | Lu Ming&#39;s Website</title>
+  <meta name="author" content="Lu Ming">
+  
+  <meta name="description" content="Discuss Landau levels in symmetric and Landau gauge">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Landau levels and its degeneracy  in different gauges"/>
+  <meta property="og:site_name" content="Lu Ming&#39;s Website"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Lu Ming&#39;s Website" type="application/atom+xml">
+  
+  
+    <link href="/favicon.ico" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-56515979-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Lu Ming&#39;s Website</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/what-is-up" title="What's up?">
+			  <i class="fa fa-wechat"></i>What's up
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me via RSS">
+			  <i class="fa fa-rss"></i>Subscribe
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> Landau levels and its degeneracy  in different gauges</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>Discuss Landau levels in symmetric and Landau gauge</p>
+			
+		</div> <!-- alert -->
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <p>周三给本科生讲量子力学习题课的时候，讲到了朗道能级。课上我是用朗道规范来推导的。用这个规范推导比较简单一些，因为很容易的就能化成一个谐振子方程，学生们都比较<a id="more"></a>熟悉。我在这篇博客里面对它做个总结，再用对称规范做一个类似的推导，然后再讨论下朗道能级简并度。如果有时间的话这些材料可以在习题课上再讲讲，让他们具体感受下规范的选取的任意性。</p>
+<p>我们考虑的问题是一个带电为<span class="math">\(q\)</span>质量为<span class="math">\(m\)</span>的电荷，在含有匀强磁场<span class="math">\(B_0\hat z\)</span>的无限大空间的运动。电磁场中的哈密顿量写作：<span class="math">\[H=\frac{1}{2m}(-i\hbar\nabla-q\vec A)^2+q\varphi\]</span></p>
+<h2 id="朗道规范">朗道规范</h2>
+<h3 id="能级">能级</h3>
+<p>朗道规范选取<span class="math">\(\vec A=-B_0y\hat x\)</span>, <span class="math">\(\varphi=0\)</span>。这样，哈密顿量便写成： <span class="math">\[
+ H=\frac{1}{2m}\left[(\hat p_x+qB_0y)^2+\hat p_y ^2+\hat p_z^2\right]
+ \]</span> 显然，<span class="math">\({\hat p_x,\hat p_z,H}\)</span>相互对易，我们可以选取它们的共同本征波函数作为定态薛定谔方程的解: <span class="math">\[
+\psi(x,y,z)=e^{i(p_xx/\hbar+p_zz/\hbar)}\chi(y)
+\]</span></p>
+<p>带入薛定谔方程之中，得到： <span class="math">\[
+\frac{1}{2m}\hat p_y^2\chi(y)+\frac{1}{2}m\omega^2(y-y_0)^2\chi(y)=(E-\frac{p_z^2}{2m})\chi(y)
+\]</span></p>
+<p>其中，<span class="math">\(\omega=qB_0/m\)</span>，<span class="math">\(y_0=-p_x/qB_0\)</span>.</p>
+<p>上面的方程是我们熟知的谐振子，所以立即可以得到：<span class="math">\(E_n=(n+1/2)\hbar w+p_z^2/2m\)</span>，<span class="math">\(\chi_n(y)=\bar\chi_n(y,y_0)\)</span>。</p>
+<h3 id="能级的简并度">能级的简并度</h3>
+<p>由于能级<span class="math">\(E_n\)</span>不依赖于<span class="math">\(y_0=-p_x/qB_0\)</span>,且对于无限大系统<span class="math">\(p_x\in(-\infty,\infty)\)</span>,因此朗道能级的简并度是无穷的。但如果是一个有限大的系统, <span class="math">\(S=l_xl_y\)</span>，选取周期性边界条件，则要求<span class="math">\(p_xl_x/\hbar=2\pi n_x\)</span>，对应的<span class="math">\(y_0\)</span>的选取也相应的量子化：<span class="math">\(y_0=-n_x h/qB_0l_x\)</span>，因而在有限大的<span class="math">\(l_y\)</span>范围内，<span class="math">\(y_0\)</span>可取值的数目为：<span class="math">\(\Phi/\Phi_0\)</span>，其中<span class="math">\(\Phi=B_0S\)</span>为穿过整个区域的磁通，而<span class="math">\(\Phi_0=h/q\)</span>为一个flux quanta.</p>
+<h2 id="对称规范">对称规范</h2>
+<h3 id="能级-1">能级</h3>
+<p>对称规范选取<span class="math">\(\vec A=B_0(x\hat y-y\hat x)/2\)</span>, <span class="math">\(\varphi=0\)</span>。这样 <span class="math">\[
+\begin{aligned}
+H&amp;=\frac{1}{2m}(\hat p-q\vec A)^2\\
+  &amp;=\frac{1}{2m}[\hat p^2+q^2A^2-q(\hat p\cdot \vec A+\vec A\cdot \hat p)]\\
+  &amp;=\frac{1}{2m}[\hat p^2+q^2A^2-q(2\vec A\cdot \hat p-i\hbar\mathrm{div}\vec A)]\\
+  &amp;=\frac{1}{2m}\hat p^2+\frac{1}{2}m\Omega^2(x^2+y^2)-\Omega\hat l_z
+\end{aligned}
+\]</span></p>
+<p>其中，<span class="math">\(\Omega=\omega/2\)</span>。显然，<span class="math">\(\hat p_z,H,\hat l_z\)</span>互相对易，我们可以选取它们的共同本征态作为波函数(柱坐标下)： <span class="math">\[
+\psi(r,\phi,z)=e^{i \bar m\phi}e^{ip_zz/\hbar}R(r)
+\]</span></p>
+<p>柱坐标下哈密顿量可以化为： <span class="math">\[
+H=-\frac{\hbar^2}{2m}(\frac{1}{r}\frac{\partial}{\partial r}r\frac{\partial}{\partial r}+\frac{1}{r^2}\frac{\partial ^2}{\partial \phi^2}+\frac{\partial ^2}{\partial z^2})+\frac{1}{2}m\Omega^2r^2+i\Omega\hbar \frac{\partial}{\partial \phi}
+\]</span></p>
+<p>定态薛定谔方程化为：</p>
+<p><span class="math">\[
+\left[-\frac{\hbar^2}{2m}(\frac{1}{r}\frac{\partial}{\partial r}r\frac{\partial}{\partial r}-\frac{\bar m^2}{r^2})+\frac{1}{2}m\Omega^2r^2\right]R(r)=(E-\frac{p_z^2}{2m}+\bar m \hbar\Omega)R(r)=E_rR(r)
+\]</span></p>
+<p>令<span class="math">\(R(r)=r^{-\frac{1}{2}}u(r)\)</span>，上式化为： <span class="math">\[\tag{1}
+-\frac{\hbar^2}{2m}\left( \frac{\partial^2}{\partial r^2}+\frac{\frac{1}{4}-\bar m^2}{r^2}\right)u(r)+\frac{1}{2}m\Omega^2r^2u(r)=E_ru(r)
+\]</span></p>
+<p>This is nothing but the radial equation of <span class="math">\(3D\)</span> harmonic oscillator, with the substitution of <span class="math">\(l(l+1)\rightarrow\bar m^2-1/4\)</span>, so: <span class="math">\[\tag{2}
+E_r=(j_{max}+l+3/2)\hbar \Omega=(j_{max}+|\bar m|+1)\hbar \Omega
+\]</span> where <span class="math">\(j_{max}\)</span> is even integer<span class="math">\(^1\)</span>.</p>
+<p>At last we get: <span class="math">\[E=(j_{max}+|\bar m|+\bar m+1)\hbar \Omega+\frac{p_z^2}{2m}=(n+1/2)\hbar\omega+\frac{p_z^2}{2m}\]</span>.</p>
+<h3 id="能级的简并度-1">能级的简并度</h3>
+<p>You can see for an arbitrary <span class="math">\(n\)</span>, there are infinite number of <span class="math">\(\bar m\)</span>, so the degeneracy of Laudau level is again infinite. How about finite size? Well, actually the <span class="math">\(l_z\)</span> is bounded because <span class="math">\(r\)</span> and <span class="math">\(p\)</span> are bounded. Suppose we are considering a disk with radius <span class="math">\(R\)</span>,</p>
+<ul>
+<li>The maximum <span class="math">\(l_z^{max}=qB_0R^2\)</span>, <span class="math">\(\bar m_{max}=2\Phi/\Phi_0\)</span>, why the degeneracy is doubled? They should independent of gauge choice.</li>
+<li>Can <span class="math">\(\bar m\)</span> be both signs? Since in classical mechanics, <span class="math">\(l_z\)</span> can choose only one sign depending on the charge is negative or positive. However in our derivation, no restriction does <span class="math">\(\bar m\)</span> has.</li>
+</ul>
+<p>How to resolve these two paradox?</p>
+<h4 id="the-first-paradox">The first paradox</h4>
+<p>The problem is that we tangle the “Canonical angular momentum” with the physical one. Since <span class="math">\(\hat p_x,\hat p_y\)</span> is canonical momentum, they are explicit gauge dependent, hence <span class="math">\(l_x\)</span> is also gauge dependent.</p>
+<p>The <span class="math">\(\hat l_z\)</span> above admit no direct physical meaning, so the bounded condition for it is just invalid. The true physical momentum should be <span class="math">\[\tag{3}
+\begin{aligned}
+\hat L_z=&amp;x\hat P_y-y\hat P_x\\
+   =&amp;x(\hat p_y-qA_y)-y(\hat p_x-qA_x)\\
+   =&amp;\hat l_z-\frac{qB}{2}r^2
+\end{aligned}
+\]</span></p>
+<p>Consider classically of left hand side, <span class="math">\(L_z=-qBr^2\)</span>, and<span class="math">\(^2\)</span> <span class="math">\(l_z=-qBr^2\)</span>so we can have <span class="math">\(|q|BR^2/2\hbar\)</span> different values of <span class="math">\(\bar m\)</span>, this gives the right degeneracy: <span class="math">\(\Phi/\Phi_0\)</span></p>
+<h4 id="the-second-paradox">The second paradox</h4>
+<p>Equation(1) is the radial equation for a 3D harmonic oscillator with angular frequency <span class="math">\(\Omega\)</span>. Using viral theorem and refer to equation(2), we have<span class="math">\(^3\)</span>: <span class="math">\[
+\frac{1}{2}m\Omega^2\langle r^2\rangle=\frac{1}{2}E_r\\
+\langle r^2\rangle=\frac{\hbar}{m\Omega}(j_{max}+|\bar m|+1)
+\]</span> With equation(3), we have <span class="math">\[
+\langle L_z\rangle=\bar m\hbar-\frac{qB}{2m\Omega}(j_{max}+|\bar m|+1)
+\]</span> If <span class="math">\(q&gt;0\)</span>: <span class="math">\[
+\langle L_z\rangle=-(j_{max}+1)\hbar-(|\bar m|-\bar m)\hbar
+\]</span> always less than <span class="math">\(0\)</span>. If <span class="math">\(q&lt;0\)</span>: <span class="math">\[
+\langle L_z\rangle=(j_{max}+1)\hbar+(|\bar m|+\bar m)\hbar
+\]</span> always larger than <span class="math">\(0\)</span>. In consistent with classical case.</p>
+<h2 id="升降算符推导">升降算符推导</h2>
+<h2 id="footnote">Footnote</h2>
+<p><span class="math">\(^1:\)</span> $j_{max}&gt;0 $ and <span class="math">\(l=|\bar m|-1/2\)</span> is chosen because even for the smallest nonzero <span class="math">\(|\bar m|=1\)</span>, if <span class="math">\(l=-|\bar m|-1/2=-3/2\)</span>. The asymptotic behavior of <span class="math">\(R(r)=r^{-\frac{1}{2}}u(r) \sim r^{-\frac{1}{2}}r^{l+1}=r^{-1}\)</span> , then the integral <span class="math">\(\int R(r)^2 r \mathrm{d} r\)</span> will be divergent near <span class="math">\(r=0\)</span>, i.e. the wave function is not normalizable.</p>
+<p><span class="math">\(^2:\)</span>This argument is a little bit problematic, since in this case <span class="math">\(l_z\)</span> has a single sign, which is required by quantum mechanics. See paradox 2 for example.</p>
+<p><span class="math">\(^3:\)</span> Pay attention to the difference between <span class="math">\(\Omega\)</span> and <span class="math">\(\omega\)</span> in different equations.</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2014/11/12/climb-xiang-shan/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2014/11/06/derive-a-commutator/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div id="disqus_thread">
+     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  	 </div>
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Nov 7 2014 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/physics/">physics<span>7</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/quantum-mechanics/">quantum mechanics<span>6</span></a></li> <li><a href="/tags/electromagnetism/">electromagnetism<span>1</span></a></li> <li><a href="/tags/teaching/">teaching<span>8</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	   <a data-toggle="collapse" data-target="#toc"><i class="fa fa-bars"></i></a>
+	   <div id="toc" class="toc collapse in">
+			<ol class="toc-article"><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#朗道规范"><span class="toc-article-text">朗道规范</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#能级"><span class="toc-article-text">能级</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#能级的简并度"><span class="toc-article-text">能级的简并度</span></a></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#对称规范"><span class="toc-article-text">对称规范</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#能级-1"><span class="toc-article-text">能级</span></a></li><li class="toc-article-item toc-article-level-3"><a class="toc-article-link" href="#能级的简并度-1"><span class="toc-article-text">能级的简并度</span></a><ol class="toc-article-child"><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#the-first-paradox"><span class="toc-article-text">The first paradox</span></a></li><li class="toc-article-item toc-article-level-4"><a class="toc-article-link" href="#the-second-paradox"><span class="toc-article-text">The second paradox</span></a></li></ol></li></ol></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#升降算符推导"><span class="toc-article-text">升降算符推导</span></a></li><li class="toc-article-item toc-article-level-2"><a class="toc-article-link" href="#footnote"><span class="toc-article-text">Footnote</span></a></li></ol>
+		</div>
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2014 Lu Ming
+  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
+<script src="<%- config.root %>js/gallery.js"></script>
+<script src="<%- config.root %>js/bootstrap.min.js"></script>
+<script src="<%- config.root %>js/main.js"></script>
+
+<% if (theme.duoshuo_shortname) { %>
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: '<%= theme.duoshuo_shortname %>' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<% } else if (config.disqus_shortname){ %>
+<script type="text/javascript">
+var disqus_shortname = '<%= config.disqus_shortname %>';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<% } %>
+<% if (theme.fancybox){ %>
+<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+<% } %>
+
+</body>
+   </html>

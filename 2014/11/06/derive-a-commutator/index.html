@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>优雅的推导一个对易关系 | Lu Ming&#39;s Website</title>
+  <meta name="author" content="Lu Ming">
+  
+  <meta name="description" content="Derive a quantum mechanics commutator with electromagnetic field.">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="优雅的推导一个对易关系"/>
+  <meta property="og:site_name" content="Lu Ming&#39;s Website"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="Lu Ming&#39;s Website" type="application/atom+xml">
+  
+  
+    <link href="/favicon.ico" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-56515979-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+</head>
+
+ <body>  
+  <nav id="main-nav" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <button type="button" class="navbar-header navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+	  <a class="navbar-brand" href="/">Lu Ming&#39;s Website</a>
+      <div class="collapse navbar-collapse nav-menu">
+		<ul class="nav navbar-nav">
+		  
+		  <li>
+			<a href="/archives" title="All the articles">
+			  <i class="fa fa-archive"></i>Archives
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/categories" title="All the categories">
+			  <i class="fa fa-folder"></i>Categories
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/tags" title="All the tags">
+			  <i class="fa fa-tags"></i>Tags
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/what-is-up" title="What's up?">
+			  <i class="fa fa-wechat"></i>What's up
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/about" title="About me">
+			  <i class="fa fa-user"></i>About
+			</a>
+		  </li>
+		  
+		  <li>
+			<a href="/atom.xml" title="Subscribe me via RSS">
+			  <i class="fa fa-rss"></i>Subscribe
+			</a>
+		  </li>
+		  
+		</ul>
+      </div>
+    </div> <!-- container -->
+</nav>
+<div class="clearfix"></div>
+
+  <div class="container">
+  	<div class="content">
+    	 
+
+
+	
+		<div class="page-header">		
+			<h1> 优雅的推导一个对易关系</h1>
+		</div>		
+	
+
+
+
+<div class="row post">
+	<!-- cols -->
+	
+	<div class="col-md-9">
+	
+
+	
+		 <div class="alert alert-success description">
+			<i class="fa fa-info-circle"></i> <p>Derive a quantum mechanics commutator with electromagnetic field.</p>
+			
+		</div> <!-- alert -->
+			
+
+	<!-- content -->
+	<div class="mypage">		
+	    <p>这学期当量子力学TA，主要给本科生讲习题课。上周五在讲到了电磁场中的薛定谔方程的时候遇到了一个对易关系<a id="more"></a>：<span class="math">\[\left[ \hat p-\vec A,(\hat p-\vec A)^2\right]\]</span> 课上我是按照分量来推导的，就是分别算出这个对易关系的<span class="math">\(x,y,z\)</span>分量。讲的时候由于写的东西太多还出现了笔误，几乎已经把我挂在黑板上了。后来想想用矢量分析的那一套可以更加优雅的把这个对易关系推出来，下面给出推导，重复指标代表求和： <span class="math">\[
+\begin{aligned}
+&amp;\left[ \hat p-\vec A,(\hat p-\vec A)^2\right] \\
+=&amp;\left[(p_i-A_i)\vec e_i,(p_j-A_j)(p_j-A_j)\right]\\
+=&amp;\vec e_i\left\{\left[p_i-A_i,p_j-A_j\right](p_j-A_j)+(p_j-A_j)\left[p_i-A_i,p_j-A_j\right]\right\}\\
+=&amp;i\hbar\vec e_i\left\{(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})(p_j-A_j)+(p_j-A_j)(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})\right\}\\
+=&amp;i\hbar\vec e_i \left\{\left[(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})p_j+p_j(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})\right]-2(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})A_j\right\}
+\end{aligned}
+\]</span></p>
+<p>接下来就比较考验眼力了，你需要看出来那三项分别是三个矢量的叉乘， 比如： <span class="math">\[
+\begin{aligned}
+&amp;(\frac{\partial A_j}{\partial x_i}-\frac{\partial A_i}{\partial x_j})A_j \vec e_i\\
+=&amp;(\delta_{lj}\delta_{mi}-\delta_{li}\delta_{mj})\frac{\partial A_l}{\partial x_m}A_j\vec e_i\\
+=&amp;\epsilon_{klm}\epsilon_{kji}\frac{\partial A_l}{\partial x_m}A_j\vec e_i\\
+=&amp;\epsilon_{kji}(\nabla\times\vec A)_k A_j\vec e_i\\
+=&amp;\nabla\times\vec{A}\times\vec{A}\\
+=&amp;\vec B\times \vec A
+\end{aligned}
+\]</span></p>
+<p>其他两项类似，于是得到： <span class="math">\[\left[ \hat p-\vec A,(\hat p-\vec A)^2\right]=i\hbar(\vec{p}\times\vec{B}+\vec{B}\times\vec{p}+2\vec{B}\times\vec{A})\]</span></p>
+<p>这就推导完了，一般来说，计算矢量的话用张量表示还是要简单一些。尤其有矢量的对易的时候，用这种方法计算非常直接，你也不用想这矢量对易出来到底是个啥东西呢，只需要闷头算就行了，当然中间有些步骤可能得考验下你的眼力啦。</p>
+<p>打公式好麻烦，其实我写这个主要想测试下我博客数学公式的兼容性，再给博客加点儿料，免得全是些无病呻吟的东西 ^_^</p>
+	  
+	</div>
+
+	<div>
+  	<center>
+	<div class="pagination">
+<ul class="pagination">
+	 
+				
+    	<li class="prev"><a href="/2014/11/07/Landau-levels/" class="alignleft prev"><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+  		
+
+        <li><a href="/archives"><i class="fa fa-archive"></i>Archive</a></li>
+
+		
+		   <li class="next"><a href="/2014/11/05/feel-lonely/" class="alignright next">Next<i class="fa fa-arrow-circle-o-right"></i></a></li>         
+        
+	
+</ul>
+</div>
+
+    </center>
+	</div>
+	
+	<!-- comment -->
+	
+<section id="comment">
+  <h2 class="title">Comments</h2>
+
+  
+  	 <div id="disqus_thread">
+     <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  	 </div>
+  
+</section>
+
+	
+	</div> <!-- col-md-9/col-md-12 -->
+	
+	
+		<div class="col-md-3"> 
+
+	<!-- date -->
+	
+	<div class="meta-widget">
+	<i class="fa fa-clock-o"></i>
+	Nov 6 2014 
+	</div>
+	
+
+	<!-- categories -->
+    
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#categorys"><i class="fa fa-folder"></i></a>	
+    <ul id="categorys" class="tag_box list-unstyled collapse in">
+          
+  <li>
+    <li><a href="/categories/physics/">physics<span>7</span></a></li>
+  </li>
+
+    </ul>
+	</div>
+	
+
+	<!-- tags -->
+	
+	<div class="meta-widget">
+	<a data-toggle="collapse" data-target="#tags"><i class="fa fa-tags"></i></a>		  
+    <ul id="tags" class="tag_box list-unstyled collapse in">	  
+	    
+  <li><a href="/tags/quantum-mechanics/">quantum mechanics<span>6</span></a></li> <li><a href="/tags/teaching/">teaching<span>8</span></a></li>
+    </ul>
+	</div>
+		
+
+	<!-- toc -->
+	<div class="meta-widget">
+	
+	</div>
+	
+    <hr>
+	
+</div><!-- col-md-3 -->
+
+	
+
+</div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+  <footer> <p>
+  &copy; 2014 Lu Ming
+  
+</p>
+ </footer>
+</div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
+<script src="<%- config.root %>js/gallery.js"></script>
+<script src="<%- config.root %>js/bootstrap.min.js"></script>
+<script src="<%- config.root %>js/main.js"></script>
+
+<% if (theme.duoshuo_shortname) { %>
+<script type="text/javascript">
+  var duoshuoQuery = { short_name: '<%= theme.duoshuo_shortname %>' };
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';
+    ds.async = true;
+    ds.src = 'http://static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script>
+<% } else if (config.disqus_shortname){ %>
+<script type="text/javascript">
+var disqus_shortname = '<%= config.disqus_shortname %>';
+(function(){
+  var dsq = document.createElement('script');
+  dsq.type = 'text/javascript';
+  dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+}());
+</script>
+<% } %>
+<% if (theme.fancybox){ %>
+<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+<% } %>
+
+</body>
+   </html>
