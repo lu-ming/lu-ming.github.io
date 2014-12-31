@@ -186,7 +186,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		<h4>Categories</h4>
 		<ul class="tag_box inline list-unstyled">
 		
-			<li><a href="/categories/life/">life<span>5</span></a></li>
+			<li><a href="/categories/life/">life<span>6</span></a></li>
 		
 			<li><a href="/categories/music/">music<span>1</span></a></li>
 		
@@ -203,39 +203,41 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 		<h4>Tag Cloud</h4>
 		<ul class="tag_box inline list-unstyled">		
 		
-			<li><a href="/tags/sport/">sport<span>1</span></a></li>
-		
-			<li><a href="/tags/teaching/">teaching<span>8</span></a></li>
-		
-			<li><a href="/tags/mathematica/">mathematica<span>3</span></a></li>
-		
-			<li><a href="/tags/what-is-up/">what is up<span>1</span></a></li>
-		
 			<li><a href="/tags/quantum-mechanics/">quantum mechanics<span>6</span></a></li>
 		
 			<li><a href="/tags/blog/">blog<span>1</span></a></li>
 		
-			<li><a href="/tags/electromagnetism/">electromagnetism<span>1</span></a></li>
-		
-			<li><a href="/tags/travel/">travel<span>1</span></a></li>
-		
-			<li><a href="/tags/love/">love<span>1</span></a></li>
-		
-			<li><a href="/tags/formula/">formula<span>1</span></a></li>
-		
-			<li><a href="/tags/research/">research<span>1</span></a></li>
-		
-			<li><a href="/tags/quantum-statistical-mechanics/">quantum statistical mechanics<span>1</span></a></li>
-		
-			<li><a href="/tags/web/">web<span>1</span></a></li>
+			<li><a href="/tags/teaching/">teaching<span>8</span></a></li>
 		
 			<li><a href="/tags/introspection/">introspection<span>1</span></a></li>
 		
+			<li><a href="/tags/electromagnetism/">electromagnetism<span>1</span></a></li>
+		
+			<li><a href="/tags/what-s-up/">what&#39;s up<span>1</span></a></li>
+		
+			<li><a href="/tags/web/">web<span>1</span></a></li>
+		
 			<li><a href="/tags/mathematical-physics/">mathematical physics<span>1</span></a></li>
 		
-			<li><a href="/tags/rock/">rock<span>1</span></a></li>
+			<li><a href="/tags/what-is-up/">what is up<span>1</span></a></li>
+		
+			<li><a href="/tags/formula/">formula<span>1</span></a></li>
+		
+			<li><a href="/tags/travel/">travel<span>1</span></a></li>
+		
+			<li><a href="/tags/research/">research<span>1</span></a></li>
+		
+			<li><a href="/tags/love/">love<span>1</span></a></li>
+		
+			<li><a href="/tags/mathematica/">mathematica<span>3</span></a></li>
 		
 			<li><a href="/tags/emotion/">emotion<span>1</span></a></li>
+		
+			<li><a href="/tags/sport/">sport<span>1</span></a></li>
+		
+			<li><a href="/tags/quantum-statistical-mechanics/">quantum statistical mechanics<span>1</span></a></li>
+		
+			<li><a href="/tags/rock/">rock<span>1</span></a></li>
 		
 		 
 		</ul>
@@ -253,6 +255,10 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
       </li>
     
       <li>
+        <a href="/2015/01/01/2014-12-what-is-up/"  title="Dec. 2014 what&#39;s up archived" ><i class="fa fa-file-o"></i>【Dec. 2014】What&#39;s up?</a>
+      </li>
+    
+      <li>
         <a href="/2014/12/07/mathematica-code-for-problem6-40-Griffiths/"  title="how I use *mathematica* to calculate this problem" ><i class="fa fa-file-o"></i>mathematica code for proble...</a>
       </li>
     
@@ -262,10 +268,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     
       <li>
         <a href="/2014/12/01/2014-11-what-is-up/"  title="Nov. 2014 what&#39;s up archived" ><i class="fa fa-file-o"></i>【Nov. 2014】what&#39;s up?</a>
-      </li>
-    
-      <li>
-        <a href="/2014/11/22/eliminate-variables-in-mathematica/"  title="some tricks to eliminate variables in mathematica" ><i class="fa fa-file-o"></i>Eliminate variables in math...</a>
       </li>
     
   </ul>
@@ -311,44 +313,35 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
   <span>▲</span> 
 </a>
 
-<script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
-<script src="<%- config.root %>js/gallery.js"></script>
-<script src="<%- config.root %>js/bootstrap.min.js"></script>
-<script src="<%- config.root %>js/main.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/main.js"></script>
 
-<% if (theme.duoshuo_shortname) { %>
+
 <script type="text/javascript">
-  var duoshuoQuery = { short_name: '<%= theme.duoshuo_shortname %>' };
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';
-    ds.async = true;
-    ds.src = 'http://static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script>
-<% } else if (config.disqus_shortname){ %>
-<script type="text/javascript">
-var disqus_shortname = '<%= config.disqus_shortname %>';
+var disqus_shortname = 'luming';
 (function(){
   var dsq = document.createElement('script');
   dsq.type = 'text/javascript';
   dsq.async = true;
-  dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
 </script>
-<% } %>
-<% if (theme.fancybox){ %>
-<link rel="stylesheet" href="<%- config.root %>fancybox/jquery.fancybox.css" media="screen" type="text/css">
-<script src="<%- config.root %>fancybox/jquery.fancybox.pack.js"></script>
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
 (function($){
   $('.fancybox').fancybox();
 })(jQuery);
 </script>
-<% } %>
+
+
+
+
 
 </body>
    </html>
