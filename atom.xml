@@ -4,7 +4,7 @@
   <subtitle><![CDATA[For a better myself]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lu-ming.github.io/"/>
-  <updated>2015-01-08T06:45:52.590Z</updated>
+  <updated>2015-02-03T03:12:17.658Z</updated>
   <id>http://lu-ming.github.io/</id>
   
   <author>
@@ -15,11 +15,11 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[【TOP】Updating--2014 Fall Quantum Mechanics Class Information Summary]]></title>
-    <link href="http://lu-ming.github.io/2015/11/08/quantum-mechanics-class-info/"/>
-    <id>http://lu-ming.github.io/2015/11/08/quantum-mechanics-class-info/</id>
-    <published>2015-11-08T14:58:46.000Z</published>
-    <updated>2014-12-31T17:30:30.000Z</updated>
+    <title><![CDATA[【Archived】 2014 Fall Quantum Mechanics Class Information Summary]]></title>
+    <link href="http://lu-ming.github.io/2015/01/10/quantum-mechanics-class-info/"/>
+    <id>http://lu-ming.github.io/2015/01/10/quantum-mechanics-class-info/</id>
+    <published>2015-01-10T14:58:46.000Z</published>
+    <updated>2015-01-19T09:00:45.000Z</updated>
     <content type="html"><![CDATA[<h3 id="class-information">Class Information</h3>
 <p><strong>Lecturer</strong>: <a href="http://icqm.pku.edu.cn/contents/69/89.html" target="_blank" rel="external">Prof. X.C. Xie</a></p>
 <p><strong>Text Book:</strong> <em>Introduction to Quantum Mechanics</em> by Griffiths</p>
@@ -48,6 +48,7 @@
 <li><strong>Location</strong>: Room 209, Science Building</li>
 <li>You can bring an A4 paper with formulas on it!</li>
 </ul></li>
+<li><p><a href="http://lu-ming.github.io/2015/01/08/QM-final-exam-summary/" target="_blank" rel="external">Summary of final exam</a></p></li>
 </ul>
 <h3 id="homework-assignments1">Homework Assignments<span class="math">\(^1\)</span></h3>
 <table>
